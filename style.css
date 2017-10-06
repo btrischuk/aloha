@@ -269,12 +269,12 @@ h2 {
 }
 
 .gridarea {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 30em;
   background-color: #ccc;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(4);
 }
 
 .cat{
@@ -284,15 +284,15 @@ h2 {
 .men-cat {
   background: url(images/mens-category.jpg) center no-repeat;
   background-size: contain;
-  /* width: 50%;
-  height: 30%; */
+  width: 100%;
+  /* height: 30%; */
   justify-content: center;
   align-content: center;
   align-items: center;
   /* margin: 5% auto;   */
   /* font-size: 25px;
   padding: 40% 0; */
-  grid-column: 1 / 3;
+  grid-column: 1 / 2;
   grid-row: 1;
 }
 
@@ -305,15 +305,15 @@ h2 {
 .trends-cat {
   background: url(images/trends-category.jpg) center no-repeat;
   background-size: contain;
-  width: 20%;
+  width: 50%;
   /* justify-content: center;
   align-content: center;
   align-items: center;
   margin: 5% auto;  
   font-size: 25px;
   padding: 40% 0; */
-  grid-column: 3;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .trends a {
@@ -333,8 +333,8 @@ h2 {
   margin: 5% auto;  
   font-size: 25px;
   padding: 40% 0; */
-  grid-column: 4;
-  grid-row: 1;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .glasses a {
@@ -354,7 +354,7 @@ h2 {
   font-size: 25px;
   padding: 40% 0; */
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
 }
 
 .sale a {
@@ -373,8 +373,8 @@ h2 {
   margin: 5% auto;  
   font-size: 25px;
   padding: 40% 0; */
-  grid-column: 2 / 3;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 3;
 }
 
 .bags a {
@@ -393,8 +393,8 @@ h2 {
   margin: 5% auto;  
   font-size: 25px;
   padding: 40% 0; */
-  grid-column: 3 / 5;
-  grid-row: 2;
+  grid-column: 1/2;
+  grid-row: 4;
 }
 
 .woman a {
