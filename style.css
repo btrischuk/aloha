@@ -251,6 +251,7 @@ h2 {
 
 .styles {
   display: inline-block;
+  padding-top: 10%;  
 }
 
 .styles p {
@@ -267,37 +268,146 @@ h2 {
   align-items: center;
 }
 
-.men {
+.gridarea {
+  width: 600px;
+  height: 300px;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cat{
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+.men-cat {
   background: url(images/mens-category.jpg) center no-repeat;
   background-size: contain;
-  width: 100%;
-  height: 30%;
+  /* width: 50%;
+  height: 30%; */
   justify-content: center;
-  /* align-content: center; */
+  align-content: center;
+  align-items: center;
+  /* margin: 5% auto;   */
+  /* font-size: 25px;
+  padding: 40% 0; */
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.men a {
+  color: white;
+  justify-content: center;
+  margin: 0 50%;
+}
+
+.trends-cat {
+  background: url(images/trends-category.jpg) center no-repeat;
+  background-size: contain;
+  width: 20%;
+  /* justify-content: center;
+  align-content: center;
   align-items: center;
   margin: 5% auto;  
   font-size: 25px;
-  width: 500px;
-  padding: 40% 0;
+  padding: 40% 0; */
+  grid-column: 3;
+  grid-row: 1;
 }
 
-.men p {
+.trends a {
+  color: white;
   justify-content: center;
+  margin: 0 50%;
+}
+
+
+.glasses-cat {
+  background: url(images/glasses-category.jpg) center no-repeat;
+  background-size: contain;
+  width: 20%;
+  /* justify-content: center;
   align-content: center;
-  text-align: center;
+  align-items: center;
+  margin: 5% auto;  
+  font-size: 25px;
+  padding: 40% 0; */
+  grid-column: 4;
+  grid-row: 1;
 }
 
-/* mens */
-.category img {
+.glasses a {
+  color: white;
+  justify-content: center;
+  margin: 0 50%;
+}
+
+.sale-cat {
+  background: url(images/sale-category.jpg) center no-repeat;
+  background-size: contain;
+  width: 45%;
+  /* justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 5% auto;  
+  font-size: 25px;
+  padding: 40% 0; */
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.sale a {
+  color: white;
+  justify-content: center;
+  margin: 0 50%;
+}
+
+.bags-cat {
+  background: url(images/bags-category.jpg) center no-repeat;
+  background-size: contain;
+  width: 45%;
+  /* justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 5% auto;  
+  font-size: 25px;
+  padding: 40% 0; */
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.bags a {
+  color: white;
+  justify-content: center;
+  margin: 0 50%;
+}
+
+.woman-cat {
+  background: url(images/womens-category.jpg) center no-repeat;
+  background-size: contain;
   width: 100%;
+  /* justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 5% auto;  
+  font-size: 25px;
+  padding: 40% 0; */
+  grid-column: 3 / 5;
+  grid-row: 2;
 }
 
-/* trends..
-width: 100%; */
+.woman a {
+  color: white;
+  justify-content: center;
+  margin: 0 50%;
+}
 
 .products {
   display: inline-block;
   justify-content: center;
+  text-align: center;
+  padding-top: 5em;
 }
 
 .products h3 {
@@ -313,6 +423,13 @@ width: 100%; */
   width: 100%;
   color: white;
   padding-top: 10%;
+  text-align: center;
+  line-height:1.5;
+  margin: 1em auto;
+}
+
+.updates p {
+  margin: 1em 3em;
 }
 
 .container {
