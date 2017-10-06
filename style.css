@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of reset */
+
+/* start of font */
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway/Raleway-LightItalic.eot');
+	src: url('fonts/Raleway/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/Raleway/Raleway-LightItalic.woff2') format('woff2'),
+		   url('fonts/Raleway/Raleway-LightItalic.ttf') format('truetype'),
+		   url('fonts/Raleway/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway/Raleway-Light.eot');
+	src: url('fonts/Raleway/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/Raleway/Raleway-Light.woff2') format('woff2'),
+		   url('fonts/Raleway/Raleway-Light.ttf') format('truetype'),
+		   url('fonts/Raleway/Raleway-Light.svg#Raleway-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway/Raleway-Medium.eot');
+	src: url('fonts/Raleway/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+		   url('fonts/Raleway/Raleway-Medium.ttf') format('truetype'),
+		   url('fonts/Raleway/Raleway-Medium.svg#Raleway-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/Raleway/Raleway-MediumItalic.eot');
+	src: url('fonts/Raleway/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/Raleway/Raleway-MediumItalic.woff2') format('woff2'),
+		   url('fonts/Raleway/Raleway-MediumItalic.ttf') format('truetype'),
+		   url('fonts/Raleway/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair';
+	src: url('fonts/playfair/PlayfairDisplay-Italic.eot');
+	src: url('fonts/playfair/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/playfair/PlayfairDisplay-Italic.woff2') format('woff2'),
+		   url('fonts/playfair/PlayfairDisplay-Italic.ttf') format('truetype'),
+		   url('fonts/playfair/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair';
+	src: url('fonts/playfairdisplay/PlayfairDisplay-Regular.eot');
+	src: url('fonts/playfairdisplay/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/playfairdisplay/PlayfairDisplay-Regular.woff2') format('woff2'),
+	  	 url('fonts/playfairdisplay/PlayfairDisplay-Regular.ttf') format('truetype'),
+		   url('fonts/playfairdisplay/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair';
+	src: url('fonts/playfairdisplay/PlayfairDisplay-BoldItalic.eot');
+	src: url('fonts/playfairdisplay/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/playfairdisplay/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+		   url('fonts/playfairdisplay/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+	  	 url('fonts/playfairdisplay/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair';
+	src: url('fonts/playfairdisplay/PlayfairDisplay-Bold.eot');
+	src: url('fonts/playfairdisplay/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/playfairdisplay/PlayfairDisplay-Bold.woff2') format('woff2'),
+		   url('fonts/playfairdisplay/PlayfairDisplay-Bold.ttf') format('truetype'),
+		   url('fonts/playfairdisplay/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* end of fonts */
+
+body {
+  color: #2d2d2d;
+  max-width: 100%;
+  font-weight: 300;
+  font-family: Raleway, cursive, serif;
+}
+header {
+  display: flex;  
+  /* display: inline-block; */
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 1.5px solid rgb(236,236,236);
+  width: 100%;
+  height: 5em;  
+  
+}
+.logo img {
+  width: 30%;
+  padding: 2%;
+}
+
+.cart img {
+  position: relative;
+  justify-content: flex-end;
+  margin: 5% auto;
+  width: 4em;
+  padding: 6%;  
+}
+
+p {
+  font-family: Playfair, cursive, serif;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1em;  
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  justify-content: center;
+  display: inline-block;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  background:
+  linear-gradient(
+    rgba(0,0,0, 0.3),
+    rgba(0,0,0,0.3)),
+    url(images/banner-girl.png) center no-repeat,
+    url(images/flower-bkgd.jpg) center no-repeat; 
+  background-size: cover, contain;  
+  background-position-y: 0, 2.5em;
+  margin: 5% auto;  
+  font-size: 25px;
+  width: 100px;
+  height: 100px;
+  padding: 40% 0;
+  width: 100%;
+}
+
+.hero {
+  color: white;
+  line-height: 2;
+}
+
+.hero p {
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  font-family: Playfair, cursive, serif;
+  font-style: normal;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: Playfair, cursive, serif;
+  font-style: italic;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.styles {
+  text-align: center;
+  display: inline-block;  
+  width: 100%;
+}
+
+.bold {
+  font-family: Playfair, cursive, serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.styles {
+  display: inline-block;
+}
+
+.styles p {
+  font-family: Playfair, cursive, serif;
+  font-style: normal;
+  margin: 3%;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.men {
+  background: url(images/mens-category.jpg) center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  margin: 5% auto;  
+  font-size: 25px;
+  width: 500px;
+  padding: 40% 0;
+}
+
+.men p {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+/* mens */
+.category img {
+  width: 100%;
+}
+
+/* trends..
+width: 100%; */
+
+.products {
+  display: inline-block;
+  justify-content: center;
+}
+
+.products h3 {
+  color: #e2574c;
+}
+
+.updates {
+  background: 
+  linear-gradient(
+    rgba(0,0,0, 0.3),
+    rgba(0,0,0,0.3)),
+  url(images/wave-bkgd.jpg) center no-repeat;
+  width: 100%;
+  color: white;
+  padding-top: 10%;
+}
+
+.container {
+  padding: 7%;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-top: 3em;
+  font-size: 16px;
+}
+
+.contact p {
+  font-size: 16px; 
+  margin: 0;
+}
+
+.powered {
+padding-bottom: 0;
+line-height: 1.5;
+}
+
+.powered a {
+  text-decoration: underline;
+}
+
+.address {
+  color: #969696;
+  padding-top: 0;
+  line-height: 1.5;
+}
+footer a {
+  color: white;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 10% 20%;
+}
+
+.social p {
+  margin: 2%;
+}
+
+.social span {
+  display: none;
+}
+
+a {
+  color: #e2574c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b64036;
+}
+
+/* Tablet min width 600px */
+
+@media all and (min-width:600px) {
+
+  header {
+    border: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer p {
+    justify-content: flex-end;
+}
+
+footer .social p {
+    margin: 0px;
+    padding: 0px;
+    width: 130px;
+}
+
+.contact {
+    padding-left: 5%;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    text-align: left;
+    padding: 0 20px 5%;
+}
+
+.social span {
+    display: inline-block;
+    width: 50%;
+    padding: 5%;
+  }
+}
+
+/* desktop min width 1240px; */
+
+
+/* base font-size: 16px;
+font size: */
+
