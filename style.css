@@ -149,48 +149,70 @@ body {
   font-family: "Raleway", cursive, serif;
 }
 
-header {
-  display: flex;  
-  justify-content: space-between;
-  margin: 0 auto;
-  border-bottom: 1.5px solid rgb(236,236,236);
-  width: 100%;
-  height: 5em;  
-}
-
-.logo img {
-  width: 30%;
-  padding: 2%;
-}
-
-.cart img {
-  position: relative;
-  justify-content: flex-end;
-  margin: 5% auto;
-  width: 4em;
-  padding: 6%;  
-}
-
 p {
   font-family: "Playfair", cursive, serif;
 }
 
-.navigation ul {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 1em;  
+header .banner {
+  display: flex;  
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
 }
 
-ul {
+header .logo {
+  width: 30%;
+}
+
+header .logo img {
+  width: 100%;
+  padding: 2%;
+  order: 1;
+}
+
+header .cart {
+  display: flex;
+  justify-content: flex-end;
+  width: 3em;
+  height: 30%;
+}
+
+header .cart img {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin: 5% auto;
+  width: 100%;
+  padding: 6%;  
+  order: 3;
+}
+
+header .navigation ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
+  justify-content: space-around;
+  order: 2;
+  width: 100%;
+  padding-top: 1em;  
+  border-top: 1.5px solid rgb(236,236,236);
+}
+
+header ul {
   list-style-type: none;
 }
 
-ul li {
+/* .navigation a {
+  justify-content: space-around;
   justify-content: center;
   display: inline-block;
-}
+  background-color: black;
+  position: relative;
+  overflow: visible;
+  order: 2;  
+} */
 
 .hero {
   display: flex;
@@ -497,7 +519,7 @@ a:hover {
 
 @media all and (min-width:600px) {
 
-  header {
+  .banner {
     border: none;
   }
 
