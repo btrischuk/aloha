@@ -182,6 +182,7 @@ header .logo img {
   width: 3em;
   height: 30%;
   height: 3em;
+  order: 3;
 }
 
 header .cart img {
@@ -196,7 +197,7 @@ header .cart img {
 .navigation {
   width: 100%;
   border-top: 1.5px solid rgb(236,236,236);
-  order: 2;
+  order: 3;
 }
 
 header .navigation ul {
@@ -534,42 +535,48 @@ a:hover {
 
 @media all and (min-width:600px) {
 
-  .banner {
-    border: none;
-  }
+.banner {
+  border: none;
+}
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
+.navigation {
+  border: none;
+  width: 60%;
+  order: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
 }
 
 footer p {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 footer .social p {
-    margin: 0px;
-    padding: 0px;
-    width: 130px;
+  margin: 0px;
+  padding: 0px;
+  width: 130px;
 }
 
 .contact {
-    padding-left: 5%;
+  padding-left: 5%;
 }
 
 .social {
-    display: flex;
-    flex-direction: column;
-    display: inline-block;
-    text-align: left;
-    padding: 0 20px 5%;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  text-align: left;
+  padding: 0 20px 5%;
 }
 
 .social span {
-    display: inline-block;
-    width: 50%;
-    padding: 5%;
+  display: inline-block;
+  width: 50%;
+  padding: 5%;
   }
 }
 
