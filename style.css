@@ -469,12 +469,33 @@ a {
   display: block;
   justify-content: center;
   text-align: center;
-  /* padding-top: 5em; */
+  padding-top: 5em;
 }
 
-.products h3 {
-  color: #e2574c;
+.carousel-cell {
+  display: column;
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  flex-direction: row;
 }
+
+.carousel-cell::before {
+  display: flex;
+  text-align: center;
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+/* .products h3 {
+  color: #e2574c;
+} */
 
 .updates {
   background: 
@@ -591,11 +612,12 @@ a:hover {
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .navigation {
   border: none;
-  width: 59%;
+  width: 50%;
   order: 2;
 }
 
