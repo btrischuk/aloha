@@ -472,18 +472,12 @@ a {
   padding: 2em;
 }
 
-.updates p {
-  margin: 1em 3em;
+.carousel-cell {
+  width: 100%;
 }
-
-.flickity-prev-next-button svg{
+.flickity-prev-next-button {
   display: none;
 }
-
-.flickity-prev-next-button.next {
-  display: none;
-}
-
 
 /* .carousel-cell {
   display: column;
@@ -525,9 +519,11 @@ a {
   margin: 1em auto .5em;
 }
 
+.updates p {
+  margin: 2vh 15vw;}
+
 form {
   position: relative;
-  top: 100px;
   background-color: white;
   border-radius: 30px;
   margin: 30px;
@@ -551,8 +547,14 @@ right: 4px;
 top: 3px;
 }
 
+input{
+width: 90%;
+border: none;
+height: 5vh;
+}
+
 .container {
-  padding: 7%;
+  padding: 3% 3% 5% 3%;
 }
 
 footer {
@@ -681,6 +683,10 @@ a:hover {
   grid-area: 2 / 3 / 4 / 5;  
   height: 30vh;
   width: 100%;  
+}
+
+.carousel-cell {
+  width: 33%;
 }
 
 footer {
