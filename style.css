@@ -689,6 +689,10 @@ a:hover {
     width: 50%;
   }
 
+  .container {
+   margin: 0 20%;
+  }
+
   footer {
     display: flex;
     justify-content: space-between;
@@ -729,4 +733,8 @@ a:hover {
   .carousel-cell {
     width: 25%;
   }
+
+  .container {
+    margin: 0 30%;
+   }
 }
