@@ -147,7 +147,7 @@ table {
   box-sizing: border-box;
 } */
 a {
-  transition: .5s;
+  transition: color .5s;
 }
 
 body {
@@ -309,19 +309,14 @@ h2 {
 }
 
 .categories {
+  display: flex;
   display: grid;
   max-width: 600px;
-  /* width: 100vw; */
-  /* height: 80vh; */
-  /* repeat(auto-fill, minmax(227 .5px, 1fr))  */
-  /* repeat auto-fill, */
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 2em;
-  grid-row-gap: 2em;
+  grid-column-gap: .25em;
+  grid-row-gap: .25em;
   flex-basis: 0
-  /* grid-template: none 3 / 2; */
-  /* grid-row-gap: 5px;  */
 }
 
 .categories p {
@@ -335,17 +330,12 @@ h2 {
 
 .men-cat {
   background: url(images/mens-category.jpg) center no-repeat;
+  display: flex;
+  justify-content: center;
   background-size: cover;
   grid-column: 1/-1;  
   height: 30vh;
   width: 100vw;  
-
-  /* flex: 1 1 auto; */
-  /* flex-basis: 0; */
-  /* margin: 0;
-  width: 100vw; */
-  /* grid-column-end: 3; */
-  /* align-self: stretch; */
 }
 
 /* felc box to align and justify center */
@@ -363,6 +353,8 @@ background-size:100% */
 .trends-cat {
   background: url(images/trends-category.jpg) center no-repeat;
   background-size: cover;
+  justify-content: center;
+  display: flex;  
   height: 30vh;
   width: 48vw;  
   /* flex: 1 1 auto;
@@ -384,6 +376,8 @@ background-size:100% */
 .glasses-cat {
   background: url(images/glasses-category.jpg) center no-repeat;
   background-size: cover;
+  justify-content: center;
+  display: flex;  
   height: 30vh;
   width: 48vw;  
   /* flex: 1 1 auto;  
@@ -408,6 +402,8 @@ a {
 .sale-cat {
   background: url(images/sale-category.jpg) center no-repeat;
   background-size: cover;
+  justify-content: center;
+  display: flex;  
   grid-column: 1;
   height: 30vh;
   width: 48vw;  
@@ -430,19 +426,24 @@ a {
 .bags-cat {
   background: url(images/bags-category.jpg) center no-repeat;
   background-size: cover;
+  justify-content: center;
+  display: flex;  
   height: 30vh;
   width: 48vw;  
 }
 
-/* .bags a {
-  color: white;
+.bags a {
   justify-content: center;
-  margin: 0 50%;
-} */
+  /* color: white;
+  justify-content: center;
+  margin: 0 50%; */
+}
 
 .woman-cat {
   background: url(images/womens-category.jpg) center no-repeat;
   background-size: cover;
+  justify-content: center;
+  display: flex;  
   grid-column:1/-1;
   height: 30vh;
   width: 100vw;  
@@ -600,36 +601,47 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   /* height: 80vh; */
-  /* grid-column-gap: .5%;
-  grid-row-gap: .5%;
+  grid-column-gap: 5px;
+  /* grid-row-gap: .5%;
   flex-basis: 0 */
   /* grid-template: none 3 / 2; */
-  /* grid-row-gap: 5px;  */
+  grid-row-gap: 5px; 
 }
 
 .men-cat {
-  grid-column: 1/3; 
+  grid-area: 1 / 1 / 2 / 3;
+  height: 30vh;
+  width: 100%;  
 }
 
 .trends-cat {
-  grid-column: 3/4; 
+  grid-area: 1 / 3 / 2 / 4; 
+  height: 30vh;
+  width: 100%;  
 }
 
-
 .glasses-cat {
-  grid-column: 4/5;
+  grid-area: 1 / 4 / 4 / 5;
+  height: 30vh;
+  width: 100%;  
 }
 
 .sale-cat {
-  grid-column: 1/2;
+  grid-area: 2 / 1 / 2 / 2;  
+  height: 30vh;
+  width: 100%;  
 }
 
 .bags-cat {
-  grid-column: 2/3;
+  grid-area: 2 / 2 / 2/ 3;
+  height: 30vh;
+  width: 100%;  
 }
 
 .woman-cat {
-  grid-column: 3/5;  
+  grid-area: 2 / 3 / 4 / 5;  
+  height: 30vh;
+  width: 100%;  
 }
 
 footer {
