@@ -410,6 +410,11 @@ h2 {
   width: 100%;
 }
 
+.carousel-cell a {
+  font-size: 20px;
+  line-height: 2;
+}
+
 .flickity-prev-next-button {
   display: none;
 }
