@@ -317,6 +317,7 @@ h2 {
   align-items: center;
   color: white;
   text-transform: uppercase;
+  font-size: 4vh;
 }
 
 .men-cat {
@@ -501,7 +502,7 @@ footer a {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  padding: 10% 20%;
+  padding: 10% 20% 2%;
 }
 
 .social p {
