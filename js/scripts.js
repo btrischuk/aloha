@@ -5,33 +5,36 @@ $('.main-carousel').flickity({
 });
 
 
-$("#subscribe-button").click(function() {
+// $("#subscribe-button").click(function() {
 
   
     
     
 
-  if (y.includes("@")) {
-    if (y.includes(".")) {
-      var y = $("#subscribe-email").val();
-      var x;
-      for (var i=0; i< y.length(); i++) {
-    if (y.charAt(i) === "@") {
-      if (x.length() <1) {
-        alert ( y  + " is an invalid email");
-      } else {
-        x= "";
-        continue;
-      }
-    }
-    x += i;
-  } else alert ( y  + " is an invalid email");
-} else alert ( y  + " is an invalid email");
-    alert ("thanks for subscribing " + y + "!");
-          } 
+//   if (y.includes("@")) {
+//     if (y.includes(".")) {
+//       var y = $("#subscribe-email").val();
+//       var x;
+//       for (var i=0; i< y.length(); i++) {
+//     if (y.charAt(i) === "@") {
+//       if (x.length() <1) {
+//         alert ( y  + " is an invalid email");
+//       } else {
+//         x= "";
+//         continue;
+//       }
+//     }
+//     x += i;
+//   } else alert ( y  + " is an invalid email");
+// } else alert ( y  + " is an invalid email");
+//     alert ("thanks for subscribing " + y + "!");
+//           } 
           
 
-    });
+//     });
+
+
+
 
     //       else (alert) "invalid email address"
     
