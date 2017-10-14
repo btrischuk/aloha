@@ -142,9 +142,6 @@ table {
 
 /* end of fonts */
 
-a {
-  transition: color .5s;
-}
 
 body {
   color: #2d2d2d;
@@ -512,6 +509,11 @@ a:hover {
   body {
     font-size: 16px;
   }
+
+  a {
+    transition: color .5s;
+  }
+  
   .banner {
     border: none;
     display: flex;
