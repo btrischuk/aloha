@@ -5,11 +5,36 @@ $('.main-carousel').flickity({
 });
 
 
-// $("#subscribe-button").click(function() {
+// $('#subscribe-button').on('submit', function(event) {
+//   event.preventDefault();
+//   if ( $('#my-text-input').val() == '' ) {
+//      alert('You missed the field.');
+//   } else {
+//      alert('Thanks for filling the field!');
+//   }
+// });
 
+
+
+
+$("#subscribe-button").click(function() {
+
+  var y = $("#subscribe-email").val();
   
+  if (y.includes("@")) {
+        alert ("Thanks for subscribing " + y + "!");
+  }
+  else
+    { alert ( y  + " is an invalid email");
+  }
+          
+          
+
+    });
+
     
-    
+    // $("#subscribe-button").click(function() {
+      
 
 //   if (y.includes("@")) {
 //     if (y.includes(".")) {
