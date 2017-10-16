@@ -164,9 +164,13 @@ p {
   display: flex;  
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: white;
   margin: 0 auto;
+  max-width: 1240px;
   width: 100%;
   padding: 1em 0;
+  z-index: 3;
+  /* position: fixed; */
 }
 
 .logo {
@@ -189,7 +193,7 @@ header a {
   display: flex;
   justify-content: flex-end;
   width: 12vw;
-  height: 8vh;
+  height: 6vh;
   order: 3;
   padding: 0 1em 1em 0;
 }
@@ -304,14 +308,16 @@ h2 {
 .categories {
   display: flex;
   display: grid;
+  overflow: hidden;  
   max-height: 130vh;
   max-width: 600px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 8px;
   grid-row-gap: 6px;
-  flex-basis: 0
+  flex-basis: 0;
 }
+
 
 .categories p {
   display: flex;  
@@ -473,10 +479,13 @@ input{
 border: none;  
 width: 90%;
 height: 38px;
+border-radius: 10px;
 }
 
 .container {
+  margin: 0 auto;  
   padding: 3% 3% 5% 3%;
+  width: 25em;
 }
 
 footer {
@@ -555,6 +564,15 @@ a:hover {
     border: none;
     display: flex;
     align-items: center;
+    padding: .5vh 0;
+  }
+
+  header .navigation ul {
+      padding-top: 0;
+  }
+
+  .cart {
+    padding: 0;
   }
 
   .logo {
@@ -642,9 +660,9 @@ a:hover {
     width: 50%;
   }
 
-  .container {
-   margin: 0 20%;
-  }
+  /* .container {
+   margin: 0 ;
+  } */
 
   footer {
     display: flex;
