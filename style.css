@@ -162,6 +162,7 @@ p {
 
 .banner {
   display: flex;  
+  position: fixed;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: white;
@@ -170,7 +171,7 @@ p {
   width: 100%;
   padding: 1em 0;
   z-index: 3;
-  /* position: fixed; */
+  top: 0px;
 }
 
 .logo {
@@ -196,6 +197,13 @@ header a {
   height: 6vh;
   order: 3;
   padding: 0 1em 1em 0;
+}
+
+.counter {
+  background: orange;
+  position: fixed;
+  right: 3vw;
+  border-radius: 50%;
 }
 
 header .cart img {
@@ -244,6 +252,7 @@ header .navigation ul {
   height: 100px;
   padding: 40% 0;
   width: 100%;
+  margin-top: 16vh;  
 }
 
 .hero {
@@ -276,8 +285,8 @@ h2 {
 .styles {
   text-align: center;
   display: inline-block;  
+  padding: 25% 0 3em 0;  
   width: 100%;
-  padding-bottom: 3em;
 }
 
 .bold {
@@ -285,11 +294,6 @@ h2 {
   font-weight: bold;
   font-style: normal;
   font-size: 40px;
-}
-
-.styles {
-  display: inline-block;
-  padding-top: 10%;  
 }
 
 .styles p {
@@ -311,6 +315,7 @@ h2 {
   overflow: hidden;  
   max-height: 130vh;
   max-width: 600px;
+  padding-top: 25%;  
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 8px;
@@ -416,7 +421,7 @@ h2 {
   display: block;
   justify-content: center;
   text-align: center;
-  padding-bottom: 2em;
+  padding: 25% 0 10%;
 }
 
 .carousel-cell {
@@ -448,7 +453,12 @@ h2 {
 }
 
 .updates p {
-  margin: 2vh 15vw;}
+  margin: 2vh 15vw;
+}
+
+.add-cart {
+  margin: .5em 0;
+}
 
 form {
   position: relative;
@@ -457,7 +467,7 @@ form {
   margin: 30px;
 }
 
-button{
+.button{
 display: flex;
 display: inline-block;
 border-style: none;
@@ -568,7 +578,7 @@ a:hover {
   }
 
   header .navigation ul {
-      padding-top: 0;
+      padding: 0;
   }
 
   .cart {
@@ -588,6 +598,7 @@ a:hover {
 
   .hero {
     background-position-y: 0, 4.5em;
+    margin-top: 8vh;    
   }
 
   .hero p {
@@ -603,6 +614,10 @@ a:hover {
     display: inline-block;
   }
 
+  .styles {
+    padding-top: 4em;
+  }
+
   .styles p {
     margin: 0 20%;
     
@@ -614,6 +629,7 @@ a:hover {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px; 
+    padding-top: 1em;
   }
 
   .men-cat {
@@ -653,7 +669,7 @@ a:hover {
   }
 
   .products {
-    padding-top: 2em;
+    padding-top: 4.5em;
   }
 
   .carousel-cell {
@@ -706,7 +722,7 @@ a:hover {
     width: 25%;
   }
 
-  .contianer {
+  /* .contianer {
     margin: 0 10em;
-     }   
+     }    */
 }
