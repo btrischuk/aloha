@@ -144,12 +144,12 @@ table {
 
 
 body {
+  font-family: "Raleway", cursive, serif;  
   color: #2d2d2d;
-  max-width: 1240px;
   margin: auto;
+  max-width: 1240px;  
   font-weight: 300;
   font-size: 14px;
-  font-family: "Raleway", cursive, serif;
 }
 
 p {
@@ -166,7 +166,8 @@ p {
 }
 
 .logo {
-  width: 25vw;
+  width: 28vw;
+  padding-left: 1em;  
 }
 
 header .logo img {
@@ -186,7 +187,7 @@ header a {
   width: 12vw;
   height: 8vh;
   order: 3;
-  /* padding: 0 1em 1em 0; */
+  padding: 0 1em 1em 0;
 }
 
 header .cart img {
@@ -196,7 +197,6 @@ header .cart img {
   justify-content: space-around;
   margin: 5% auto;
   width: 100%;
-  /* padding: 6%;   */
 }
 
 .navigation {
@@ -231,8 +231,7 @@ header .navigation ul {
     url(images/banner-girl.png) center no-repeat,
     url(images/flower-bkgd.jpg) center no-repeat; 
   background-size: cover, contain;  
-  background-position-y: 0, 2.5em; 
-  font-size: 25px;
+  background-position-y: 0, 1.5em; 
   width: 100px;
   height: 100px;
   padding: 40% 0;
@@ -246,12 +245,13 @@ header .navigation ul {
 
 .hero p {
   text-transform: uppercase;
+  font-size: 2vh;
 }
 
 .hero h2 {
   font-family: "Playfair";
   font-style: normal;
-  font-size: 45px;
+  font-size: 6vh;
 }
 
 h2 {
@@ -287,7 +287,7 @@ h2 {
 .styles p {
   font-family: "Playfair", cursive, serif;
   font-style: normal;
-  margin: 3% 20%;
+  margin: 3% 5%;
   font-size: 14px;
   line-height: 2;
 }
@@ -301,7 +301,7 @@ h2 {
 .categories {
   display: flex;
   display: grid;
-  max-height: fit-content;  
+  max-height: 130vh;
   max-width: 600px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
@@ -317,7 +317,7 @@ h2 {
   align-items: center;
   color: white;
   text-transform: uppercase;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 
 .men-cat {
@@ -399,11 +399,15 @@ h2 {
   width: 100vw;  
 }
 
+.carousel-cell p {
+  color:#969696;
+}
+
 .products {
   display: block;
   justify-content: center;
   text-align: center;
-  padding: 2em;
+  padding-bottom: 2em;
 }
 
 .carousel-cell {
@@ -428,10 +432,10 @@ h2 {
   background-size: cover;  
   color: white;
   text-align: center;
+  margin: 1em auto .5em;  
   line-height: 1.5;
   padding-top: 10%;
   width: 100%;  
-  margin: 1em auto .5em;
 }
 
 .updates p {
@@ -448,24 +452,24 @@ button{
 display: flex;
 display: inline-block;
 border-style: none;
-border-radius: 30px;
 background: #e2574c;
-width: 125px;
-height: 35px;
-margin: 0 auto;
 text-align: center;
 color: white;
 font-family: "raleway light", "Times New Roman", Times, serif;
-font-size: 1.2rem;
 position: absolute;
+margin: 0 auto;
+border-radius: 30px;
 right: 4px;
 top: 3px;
+width: 125px;
+height: 35px;
+font-size: 1.2rem;
 }
 
 input{
 border: none;  
 width: 90%;
-height: 40px;
+height: 38px;
 }
 
 .container {
@@ -499,6 +503,11 @@ line-height: 1.5;
   color: #969696;
   line-height: 1.5;
 }
+
+.phone a {
+line-height: 2.5;
+}
+
 footer a {
   color: white;
 }
@@ -556,8 +565,26 @@ a:hover {
     order: 2;
   }
 
+  .hero {
+    background-position-y: 0, 4.5em;
+  }
+
+  .hero p {
+    font-size: 25px;
+  }
+
+  .hero h2 {
+    font-size: 8vh;
+    
+  }
+
   .hero span {
     display: inline-block;
+  }
+
+  .styles p {
+    margin: 0 20%;
+    
   }
 
   .categories {
@@ -604,11 +631,15 @@ a:hover {
     width: 100%;  
   }
 
+  .products {
+    padding-top: 2em;
+  }
+
   .carousel-cell {
     width: 50%;
   }
 
-  .contianer {
+  .container {
    margin: 0 20%;
   }
 
@@ -616,6 +647,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    padding: 3em 0 2em 0; 
   }
 
   footer p {
@@ -637,8 +669,8 @@ a:hover {
     flex-direction: column;
     display: inline-block;
     text-align: left;
-    padding: 0 20px 5%;
-  }
+    padding: 0 20px 1em;
+    }
 
   .social span {
     display: inline-block;
@@ -654,6 +686,6 @@ a:hover {
   }
 
   .contianer {
-    margin: 0 30%;
-   }
+    margin: 0 10em;
+     }   
 }
