@@ -1,10 +1,6 @@
 # Aloha
 
-<!-- <img src="images/screen-shot-aloha.png"
-            alt="screen shot aloha"> -->
-
 ![Screen Shot Aloha](images/screen-shot-aloha.png "Aloha")
-
 
 ## Technologies Used 
 - Font Awesome

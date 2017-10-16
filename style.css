@@ -145,19 +145,18 @@ table {
 
 body {
   font-family: "Raleway", cursive, serif;  
-  font-weight: 300;
 	font-style: normal;
   color: #2d2d2d;
   margin: auto;
-  max-width: 1240px;  
+  max-width: 1240px;    
   font-weight: 300;
   font-size: 14px;
 }
 
 p {
   font-family: "Raleway", cursive, serif;
-  font-weight: 300;
-	font-style: normal;
+  font-style: normal;
+  font-weight: 300;  
 }
 
 .banner {
@@ -179,10 +178,29 @@ p {
   padding-left: 1em;  
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1.5px solid rgb(236,236,236);
+  order: 3;
+  width: 100vh;
+}
+
 header .logo img {
   width: 100%;
   padding: 2%;
   order: 1;
+}
+
+header .navigation ul {
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+  text-transform: uppercase;
+  justify-content: space-around;
+  padding-top: 1em;
+  list-style-type: none;
+  width: 100%;
 }
 
 header a {
@@ -199,6 +217,15 @@ header a {
   padding: 0 1em 1em 0;
 }
 
+header .cart img {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  justify-content: space-around;
+  margin: 5% auto;
+  width: 100%;
+}
+
 .counter {
   display: flex;
   justify-content: center;
@@ -210,38 +237,9 @@ header a {
   max-width:100%;
 }
 
-header .cart img {
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
-  justify-content: space-around;
-  margin: 5% auto;
-  width: 100%;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  border-top: 1.5px solid rgb(236,236,236);
-  order: 3;
-  width: 100vh;
-}
-
-header .navigation ul {
-  display: flex;
-  justify-content: center;
-  align-content: baseline;
-  text-transform: uppercase;
-  justify-content: space-around;
-  padding-top: 1em;
-  list-style-type: none;
-  width: 100%;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: center;
   text-align: center;
   background:
@@ -252,11 +250,9 @@ header .navigation ul {
     url(images/flower-bkgd.jpg) center no-repeat; 
   background-size: cover, contain;  
   background-position-y: 0, 1.5em; 
-  width: 100px;
   height: 100px;
   padding: 40% 0;
   width: 100%;
-  margin-top: 16vh;  
 }
 
 .hero {
@@ -267,6 +263,10 @@ header .navigation ul {
 .hero p {
   text-transform: uppercase;
   font-size: 2vh;
+}
+
+.hero span {
+  display: block;
 }
 
 .hero h2 {
@@ -280,10 +280,6 @@ h2 {
   font-style: italic;
   display: inline-block;
   font-size: 35px;
-}
-
-.hero span {
-  display: block;
 }
 
 .styles {
@@ -326,7 +322,6 @@ h2 {
   grid-row-gap: 6px;
   flex-basis: 0;
 }
-
 
 .categories p {
   display: flex;  
@@ -398,10 +393,6 @@ h2 {
   display: flex;  
   height: 30vh;
   width: 48vw;  
-}
-
-.bags a {
-  justify-content: center;
 }
 
 .woman-cat {
@@ -586,7 +577,7 @@ a:hover {
   }
 
   header .navigation ul {
-      padding: 0;
+    padding: 0;
   }
 
   .cart {
@@ -729,8 +720,4 @@ a:hover {
   .carousel-cell {
     width: 25%;
   }
-
-  /* .contianer {
-    margin: 0 10em;
-     }    */
 }
