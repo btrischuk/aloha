@@ -12,11 +12,3 @@
 
 <h1>Contributors </h1>
 <p> Breckon Trischuk </p>
-
-
-
-
-
-
-features
-challenges 
