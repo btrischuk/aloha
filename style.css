@@ -432,7 +432,7 @@ h2 {
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)),
   url(images/wave-bkgd.jpg) center no-repeat;
-  background-size: cover;  
+  background-position: center bottom;
   color: white;
   text-align: center;
   margin: 1em auto .5em;  
