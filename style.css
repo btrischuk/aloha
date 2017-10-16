@@ -145,6 +145,8 @@ table {
 
 body {
   font-family: "Raleway", cursive, serif;  
+  font-weight: 300;
+	font-style: normal;
   color: #2d2d2d;
   margin: auto;
   max-width: 1240px;  
@@ -153,7 +155,9 @@ body {
 }
 
 p {
-  font-family: "Playfair", cursive, serif;
+  font-family: "Raleway", cursive, serif;
+  font-weight: 300;
+	font-style: normal;
 }
 
 .banner {
@@ -258,7 +262,7 @@ h2 {
   font-family: "Playfair", cursive, serif;
   font-style: italic;
   display: inline-block;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .hero span {
@@ -285,7 +289,6 @@ h2 {
 }
 
 .styles p {
-  font-family: "Playfair", cursive, serif;
   font-style: normal;
   margin: 3% 5%;
   font-size: 14px;
