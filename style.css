@@ -203,8 +203,8 @@ header a {
   display: flex;
   justify-content: center;
   background: #e2574c;
-  position: fixed;
-  right: 3vw;
+  position: absolute;
+  right: 4vw;
   width: 1em;
   border-radius: 50%;
   max-width:100%;
