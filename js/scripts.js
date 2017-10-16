@@ -5,17 +5,6 @@ $('.main-carousel').flickity({
 });
 
 
-// $('#subscribe-button').on('submit', function(event) {
-//   event.preventDefault();
-//   if ( $('#my-text-input').val() == '' ) {
-//      alert('You missed the field.');
-//   } else {
-//      alert('Thanks for filling the field!');
-//   }
-// });
-
-
-
 
 $("#subscribe-button").click(function() {
 
@@ -28,9 +17,40 @@ $("#subscribe-button").click(function() {
     { alert ( y  + " is an invalid email");
   }
           
-          
-
     });
+
+
+var count = 0;
+$('.add-cart').click(function() {
+  count++;
+  $('.counter').html(count);
+
+// if ('.counter' === 0) .css ('display', 'hidden') 
+   
+// else {
+//   display: visible;
+
+});
+
+// Query().ready(function($) {
+  
+// h = $("header").outerHeight();
+// $('#content').css('padding-top', h)
+
+// });
+
+
+
+// $('#subscribe-button').on('submit', function(event) {
+//   event.preventDefault();
+//   if ( $('#my-text-input').val() == '' ) {
+//      alert('You missed the field.');
+//   } else {
+//      alert('Thanks for filling the field!');
+//   }
+// });
+
+
 
     
     // $("#subscribe-button").click(function() {
