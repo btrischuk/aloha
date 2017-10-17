@@ -283,7 +283,7 @@ h2 {
 .about {
   text-align: center;
   display: inline-block;  
-  padding: 30% 0 0 0;
+  padding: 10% 0 0 0;
   width: 100%;
 }
 
@@ -313,7 +313,7 @@ h2 {
   overflow: hidden;  
   max-height: 130vh;
   max-width: 600px;
-  padding-top: 25%;  
+  padding-top: 5%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 3px;
@@ -440,8 +440,8 @@ h2 {
   color: white;
   text-align: center;
   margin: 1em auto .5em;  
+  padding-top: 4em;
   line-height: 1.5;
-  padding-top: 10%;
   width: 100%;  
 }
 
@@ -465,28 +465,27 @@ form {
 }
 
 .button{
-display: flex;
-display: inline-block;
-border-style: none;
-background: #e2574c;
-text-align: center;
-color: white;
-font-family: "raleway light", "Times New Roman", Times, serif;
-position: absolute;
-margin: 0 auto;
-border-radius: 30px;
-right: 4px;
-top: 3px;
-width: 125px;
-height: 35px;
-font-size: 1.2rem;
+  display: flex;
+  display: inline-block;
+  border-style: none;
+  text-align: center;  
+  background: #e2574c;
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 30px;
+  right: 4px;
+  top: 3px;
+  width: 125px;
+  height: 35px;
+  font-size: 1.2rem;
 }
 
 input{
-border: none;  
-width: 90%;
-height: 38px;
-border-radius: 10px;
+  border: none;  
+  width: 90%;
+  height: 38px;
+  border-radius: 10px;
 }
 
 .container {
@@ -513,8 +512,8 @@ footer a {
 }
 
 .powered {
-padding-bottom: 0;
-line-height: 1.5;
+  padding-bottom: 0;
+  line-height: 1.5;
 }
 
 .powered a {
@@ -612,6 +611,7 @@ a:hover {
 
   .about {
     padding-top: 4em;
+    margin-top: 0;
   }
 
   .about p {
@@ -625,7 +625,6 @@ a:hover {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px; 
-    padding-top: 1em;
   }
 
   .men-cat {
@@ -713,6 +712,7 @@ a:hover {
 }
 
 /* desktop min width 1240px; */
+
 @media all and (min-width:1240px) {
   .carousel-cell {
     width: 25%;
