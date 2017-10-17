@@ -167,7 +167,7 @@ p {
   background-color: white;
   margin: 0 auto;
   max-width: 1240px;
-  width: 100%;
+  width: 100vw;
   padding: 1em 0;
   z-index: 3;
   top: 0px;
@@ -248,16 +248,14 @@ header .cart img {
     rgba(0,0,0,0.3)),
     url(images/banner-girl.png) center no-repeat,
     url(images/flower-bkgd.jpg) center no-repeat; 
-  background-size: cover, contain;  
+  background-size: cover, contain; 
+  color: white;
+  line-height: 2;
+  margin-top: 15vh;   
   background-position-y: 0, 1.5em; 
   height: 100px;
   padding: 40% 0;
   width: 100%;
-}
-
-.hero {
-  color: white;
-  line-height: 2;
 }
 
 .hero p {
@@ -318,7 +316,7 @@ h2 {
   padding-top: 25%;  
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 8px;
+  grid-column-gap: 3px;
   grid-row-gap: 6px;
   flex-basis: 0;
 }
