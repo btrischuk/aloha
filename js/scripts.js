@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 // carousel
 $('.main-carousel').flickity({
   cellAlign: 'left',
@@ -9,16 +11,16 @@ $('.main-carousel').flickity({
 // email subscription
 $("#subscribe-button").click(function() {
 
-  var y = $("#subscribe-email").val();
+  var emailAddress = $("#subscribe-email").val();
   
-  if (y.includes("@")) {
-        alert ("Thanks for subscribing " + y + "!");
+  if (emailAddress.includes("@")) {
+    alert ("Thanks for subscribing " + y + "!");
   }
   else
-    { alert ( y  + " is an invalid email");
+    { alert ( emailAddress  + " is an invalid email");
   }
           
-    });
+});
 
 // add to cart counter
 
@@ -41,4 +43,5 @@ $('a[href*="#"]').not('a[href="#"]').on(function() {
     }, 500);
     return false;
   }
+});
 });
