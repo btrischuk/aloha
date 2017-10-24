@@ -204,13 +204,11 @@ header .navigation ul {
 }
 
 header a {
-  display: flex;
   justify-content: space-between;
 }
 
 .cart {
-  display: flex;
-  justify-content: flex-end;
+
   width: 12vw;
   height: 6vh;
   order: 3;
@@ -218,20 +216,17 @@ header a {
 }
 
 header .cart img {
-  display: flex;
   position: relative;
-  justify-content: flex-end;
-  justify-content: space-around;
   margin: 5% auto;
-  width: 100%;
+  width: 40px;
 }
 
 .counter {
-  display: flex;
-  justify-content: center;
   background: #e2574c;
   position: absolute;
-  right: 4vw;
+  text-align: center;
+  top: 1vh;
+  right: 4%;
   width: 1em;
   border-radius: 50%;
   max-width:100%;
@@ -578,6 +573,10 @@ a:hover {
 
   .cart {
     padding: 0;
+  }
+
+  .counter {
+    right: 7%;
   }
 
   .logo {
