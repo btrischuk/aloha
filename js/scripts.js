@@ -14,7 +14,7 @@ $("#subscribe-button").click(function() {
   var emailAddress = $("#subscribe-email").val();
   
   if (emailAddress.includes("@")) {
-    alert ("Thanks for subscribing " + y + "!");
+    alert ("Thanks for subscribing " + emailAddress + "!");
   }
   else
     { alert ( emailAddress  + " is an invalid email");
