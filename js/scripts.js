@@ -44,4 +44,12 @@ $('a[href*="#"]').not('a[href="#"]').on(function() {
     return false;
   }
 });
+
+//fix screen reader bugs
+
+$(function() {
+  $("a[href^='#']").not("a[href='#']").click(function() {
+     $("#"+$(this).attr("href").slice(1)+"").focus();
+  });
+});
 });
