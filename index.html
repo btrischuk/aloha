@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lan='en'>
+<html lang='en'>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,11 +7,6 @@
   <title>Aloha Apparel Co.</title>  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://use.fontawesome.com/f09abe08db.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
- 
-
 </head>
 <body>
   
@@ -84,7 +79,7 @@
         <img src="images/stretch-knit-dress.jpg"   
           alt="Stretch Knit Dress">
         <p>Dresses</p>
-        <a href="#"> 
+        <a class= "knit-dress" href="#"> 
         <h3>Stretch Knit Dress</h3></a>
         <p>$169.00</p>
         <button class="add-cart">Add To cart</button>
@@ -94,7 +89,7 @@
         <img src="images/cotton-blue-shirt.jpg"   
           alt="Cotton Blue Shirt">
         <p>Shirts</p>
-        <a href="#"> 
+        <a class= "shirt" href="#"> 
         <h3>Cotton Blue Shirt</h3></a>
         <p>$89.00</p>
         <button class="add-cart">Add To cart</button>
@@ -104,7 +99,7 @@
         <img src="images/checked-stretch-dress.jpg"
           alt="Checked Stretch Dress">
         <p>Dresses</p>
-        <a href="#"> 
+        <a class= "stretch-dress" href="#"> 
         <h3>Checked Strecth Dress</h3></a>
         <p>$129.00</p>
         <button class="add-cart">Add To cart</button>
@@ -114,7 +109,7 @@
         <img src="images/pink-dotted-dress.jpg"
           alt="Pink Dotted Dress">
         <p>Dresses</p>
-        <a href="#"> 
+        <a class= "dotted-dress" href="#"> 
         <h3>Pink Dotted Dress</h3></a>
         <p>$129.00</p>
         <button class="add-cart">Add To cart</button>
@@ -124,7 +119,7 @@
         <img src="images/blue-silk-dress.jpg"
           alt="Blue Silk Dress">
         <p>Dresses</p>
-        <a href="#"> 
+        <a class= "silk-dress" href="#"> 
         <h3>Blue Silk Dress</h3></a>
         <p>$129.00</p>
         <button class="add-cart">Add To cart</button>
@@ -134,7 +129,7 @@
         <img src="images/demin-overall-shorts.jpg"
           alt="Denim Overall Shorts">
         <p>Shorts</p>
-        <a href="#"> 
+        <a class= "overall-shorts" href="#"> 
         <h3>Denim Overall Shorts</h3></a>
         <p>$129.00</p>
         <button class="add-cart">Add To cart</button>
@@ -144,7 +139,7 @@
         <img src="images/cotton-yellow-tshirt.jpg"
           alt="Cotton Yellow Tshirt">
         <p>T-Shirts</p>
-        <a href="#"> 
+        <a class= "tshirt" href="#"> 
         <h3>Cotton Yellow T-Shirt</h3></a>
         <p>$129.00</p>
         <button class="add-cart">Add To cart</button>
@@ -154,7 +149,7 @@
         <img src="images/blue-hipster-backpack.jpg"
         alt="Blue Hipster Backpack">
         <p>Backpack</p>
-        <a href="#"> 
+        <a class= "backpack" href="#"> 
         <h3>Blue Hipster Backpack</h3></a>
         <p>$129.00</p>
         <button class="add-cart">Add To cart</button>
@@ -169,14 +164,15 @@
     <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
     
     <div class="container">
+      <label>
       <form action="/action_page.php">
       <input id="subscribe-email" type="email" placeholder="Your Email" name="info@alohaapparel.com">
       <button class="button" id="subscribe-button">Subscribe</button>
+      </label>
     </div>
   </section>
 
   <footer>
-
     <section class="contact">
       <div class="powered">
         <p>&copy; 2017 Aloha Apparel Co.</p>
@@ -201,7 +197,10 @@
 
   <script src="js/scripts.js"></script>
   <script src="js/smoothscroll.js"></script>
-  
+  <script src="https://use.fontawesome.com/f09abe08db.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+  <script src="js/tota11y.js"></script>
   
 </body>
 </html>
