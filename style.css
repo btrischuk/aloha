@@ -292,6 +292,10 @@ h2 {
   font-size: 35px;
 }
 
+h3 {
+  font-family: "Playfair", cursive,serif;
+}
+
 .about {
   text-align: center;
   display: inline-block;  
@@ -545,6 +549,7 @@ line-height: 2.5;
   display: flex;
   list-style: none;
   justify-content: space-around;
+  font-family: "ralewaylight", cursive, serif;
   padding: 10% 20% 2%;
 }
 
