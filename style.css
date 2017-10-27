@@ -141,7 +141,9 @@ table {
 }
 
 /* end of fonts */
-
+* {
+  box-sizing: border-box;
+}
 /* Accessability */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -177,23 +179,26 @@ p {
   font-weight: 300;  
 }
 
-.banner {
-  display: flex;  
+.site-header {
   position: fixed;
-  justify-content: space-between;
-  flex-wrap: wrap;
   background-color: white;
   margin: 0 auto;
-  max-width: 100vw;
   width: 100vw;
   padding: 1em 0;
   z-index: 3;
   top: 0px;
 }
 
+.banner {
+  display: flex;  
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .logo {
   width: 28vw;
   padding-left: 1em;  
+  flex: 0 1 10%;
 }
 
 .navigation {
@@ -201,13 +206,12 @@ p {
   justify-content: space-around;
   border-top: 1.5px solid rgb(236,236,236);
   order: 3;
-  width: 100vh;
+  flex: 1 1 80%;
 }
 
 header .logo img {
-  width: 100%;
+  width: 100px;
   padding: 2%;
-  order: 1;
 }
 
 header .navigation ul {
@@ -226,10 +230,10 @@ header a {
 }
 
 .cart {
-  width: 12vw;
   height: 6vh;
   order: 3;
   padding: 0 1em 1em 0;
+  flex: 0 1 10%;
 }
 
 header .cart img {
@@ -369,7 +373,7 @@ h3 {
   justify-content: center;
   display: flex;  
   height: 30vh;
-  width: 48vw;  
+  width: 50vw;  
 }
 
 .glasses-cat {
@@ -381,7 +385,7 @@ h3 {
   justify-content: center;
   display: flex;  
   height: 30vh;
-  width: 48vw;  
+  width: 50vw;  
 }
 
 .sale-cat {
@@ -394,7 +398,7 @@ h3 {
   display: flex;  
   grid-column: 1;
   height: 30vh;
-  width: 48vw;  
+  width: 50vw;  
 }
 
 .bags-cat {
@@ -406,7 +410,7 @@ h3 {
   justify-content: center;
   display: flex;  
   height: 30vh;
-  width: 48vw;  
+  width: 50vw;  
 }
 
 .woman-cat {
@@ -453,6 +457,7 @@ h3 {
     rgba(0,0,0,0.3)),
   url(images/wave-bkgd.jpg) center no-repeat;
   background-position: center bottom;
+  background-position: cover;
   color: white;
   text-align: center;
   margin: 1em auto .5em;  
@@ -569,7 +574,11 @@ a {
 a:hover {
   color: #b64036;
 }
-
+.max-container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Tablet min width 600px */
 
 @media all and (min-width:600px) {
@@ -608,7 +617,7 @@ a:hover {
 
   .navigation {
     border: none;
-    width: 50%;
+    max-width: 50%;
     order: 2;
   }
 
@@ -694,7 +703,7 @@ a:hover {
     width: 25em;
   }
 
-  footer {
+  .site-footer {
     display: flex;
     justify-content: space-between;
     text-align: left;
