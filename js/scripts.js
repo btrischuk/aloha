@@ -8,19 +8,33 @@ $('.main-carousel').flickity({
 });
 
 
-// email subscription
-$("#subscribe-button").click(function() {
 
-  var emailAddress = $("#subscribe-email").val();
-  
-  if (emailAddress.includes("@")) {
-    alert ("Thanks for subscribing " + emailAddress + "!");
-  }
-  else
-    { alert ( emailAddress  + " is an invalid email");
-  }
-          
+$('#subscribe-button').on('submit', function(event) {
+  event.preventDefault();
+  if ( !$('#email').val() == '') { 
+    alert('Thank you for subscribing!');
+  } else {
+      alert('Please enter a valid email address.');
+    }
 });
+
+
+
+
+
+// email subscription
+// $("#subscribe-button").click(function() {
+
+//   var emailAddress = $("#subscribe-email").val();
+  
+//   if (emailAddress.includes("@")) {
+//     alert ("Thanks for subscribing " + emailAddress + "!");
+//   }
+//   else
+//     { alert ( emailAddress  + " is an invalid email");
+//   }
+          
+// });
 
 // add to cart counter
 
