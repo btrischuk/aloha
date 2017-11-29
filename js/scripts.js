@@ -7,8 +7,6 @@ $('.main-carousel').flickity({
   autoPlay: true,
 });
 
-
-
 $('#subscribe-button').on('submit', function(event) {
   event.preventDefault();
   if ( !$('#email').val() == '') { 

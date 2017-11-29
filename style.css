@@ -194,18 +194,18 @@ p {
   display: -ms-flexbox;
   display: flex;  
   -webkit-box-pack: justify;  
-      -ms-flex-pack: justify;  
-          justify-content: space-between;
+  -ms-flex-pack: justify;  
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .logo {
   width: 28vw;
   padding-left: 1em;  
   -webkit-box-flex: 0;  
-      -ms-flex: 0 1 10%;  
-          flex: 0 1 10%;
+  -ms-flex: 0 1 10%;  
+  flex: 0 1 10%;
 }
 
 .navigation {
@@ -213,14 +213,14 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border-top: 1.5px solid rgb(236,236,236);
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80%;
-          flex: 1 1 80%;
+  -ms-flex: 1 1 80%;
+  flex: 1 1 80%;
 }
 
 header .logo img {
@@ -233,13 +233,13 @@ header .navigation ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: baseline;
-      align-content: baseline;
+  align-content: baseline;
   text-transform: uppercase;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-top: 1em;
   list-style-type: none;
   width: 100%;
@@ -247,19 +247,19 @@ header .navigation ul {
 
 header a {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .cart {
   height: 6vh;
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   padding: 0 1em 1em 0;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 10%;
-          flex: 0 1 10%;
+  -ms-flex: 0 1 10%;
+  flex: 0 1 10%;
 }
 
 header .cart img {
@@ -285,11 +285,11 @@ header .cart img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   background:
   -webkit-gradient(
@@ -380,11 +380,11 @@ h3 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .categories {
@@ -398,10 +398,10 @@ h3 {
   padding-top: 5%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 3px;
+  grid-column-gap: 6px;
   grid-row-gap: 6px;
   -ms-flex-preferred-size: 0;
-      flex-basis: 0;
+  flex-basis: 0;
 }
 
 .categories p {
@@ -409,13 +409,13 @@ h3 {
   display: -ms-flexbox;
   display: flex;  
   -webkit-box-pack: center;  
-      -ms-flex-pack: center;  
-          justify-content: center;
+  -ms-flex-pack: center;  
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   text-transform: uppercase;
   font-size: 3vh;
@@ -444,8 +444,8 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-size: cover;
   grid-column: 1/-1;  
   height: 30vh;
@@ -473,8 +473,8 @@ h3 {
     rgba(0,0,0,0.3)), url(images/trends-category.jpg) center no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
@@ -503,8 +503,8 @@ h3 {
     rgba(0,0,0,0.3)), url(images/glasses-category.jpg) center no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
@@ -533,8 +533,8 @@ h3 {
     rgba(0,0,0,0.3)), url(images/sale-category.jpg) center no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
@@ -564,8 +564,8 @@ h3 {
     rgba(0,0,0,0.3)), url(images/bags-category.jpg) center no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
@@ -594,8 +594,8 @@ h3 {
     rgba(0,0,0,0.3)), url(images/womens-category.jpg) center no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
@@ -611,8 +611,8 @@ h3 {
 .products {
   display: block;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   padding: 25% 0 10%;
 }
@@ -682,7 +682,7 @@ form {
   margin: 30px;
 }
 
-.button{
+.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,7 +701,7 @@ form {
   font-size: 1.2rem;
 }
 
-input{
+input {
   border: none;  
   width: 90%;
   height: 38px;
@@ -755,7 +755,7 @@ line-height: 2.5;
   display: flex;
   list-style: none;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   font-family: "ralewaylight", cursive, serif;
   padding: 10% 20% 2%;
 }
@@ -801,8 +801,8 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: .5vh 0;
   }
 
@@ -827,8 +827,8 @@ a:hover {
     border: none;
     max-width: 50%;
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
   }
 
   .hero {
@@ -918,16 +918,16 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: left;
     padding: 3em 0 2em 0; 
   }
 
   footer p {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 
   footer .social p {
@@ -946,8 +946,8 @@ a:hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     display: inline-block;
     text-align: left;
     padding: 0 20px 1em;
