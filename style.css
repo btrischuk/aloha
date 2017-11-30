@@ -252,7 +252,7 @@ header a {
 }
 
 .cart {
-  height: 6vh;
+  height: 11vh;
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
@@ -268,7 +268,7 @@ header .cart img {
   width: 40px;
 }
 
-.counter {
+header .cart .counter {
   background: #e2574c;
   position: absolute;
   text-align: center;
@@ -695,7 +695,7 @@ form {
   margin: 0 auto;
   border-radius: 30px;
   right: 4px;
-  top: 3px;
+  top: 2px;
   width: 125px;
   height: 35px;
   font-size: 1.2rem;
@@ -965,5 +965,12 @@ a:hover {
 @media all and (min-width:1240px) {
   .carousel-cell {
     width: 25%;
+  }
+  form {
+    margin: 0;
+  }
+
+  header .cart .counter {
+    right: 11rem;
   }
 }
