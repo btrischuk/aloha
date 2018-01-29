@@ -5,7 +5,7 @@
 ## Technologies Used 
 - Font Awesome
 - HTML 
-- CSS. 
+- CSS
 - JavaScrpt  
 - Flickity 
 - JQuery
