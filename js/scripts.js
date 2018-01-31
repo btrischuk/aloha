@@ -8,13 +8,21 @@ $(document).ready(function() {
   });
 
   // email subscription
-  $("#subscribe-button").click(function() {
-    var emailAddress = $("#subscribe-email").val();
-    if (emailAddress.includes("@")) {
-      alert ("Thanks for subscribing " + emailAddress + "!");
+  $('#subscribe-button').on('click', function (e) {
+    e.preventDefault();
+    //reg exp from http://regexlib.com/REDetails.aspx?regexp_id=26
+    var emailAddress = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    if (emailAddress.test($('#subscribe-email').val())) {
+      $('#email-input').val("").attr("placeholder", "Thanks!");
+      alert('Thank you for subscribing!');
+    } else {
+      $('#email-input').attr("placeholder", "Invalid Address");
+      alert('Please enter valid email address');
     }
-    else { alert ( emailAddress  + " is an invalid email");
-    }
+    $('#email-input').on('focus', function (event) {
+      event.preventDefault();
+      $('this').val('').attr('placeholder', 'Your Email');
+    });
   });
 
   // add to cart counter

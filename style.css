@@ -184,7 +184,7 @@ p {
   background-color: white;
   margin: 0 auto;
   width: 100vw;
-  /* padding: 1em 0; */
+  padding: 1em 0;
   z-index: 3;
   top: 0px;
 }
@@ -448,7 +448,7 @@ h3 {
   justify-content: center;
   background-size: cover;
   grid-column: 1/-1;  
-  height: 30vh;
+  height: 23vh;
   width: 100vw;  
 }
 
@@ -478,7 +478,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  height: 30vh;
+  height: 23vh;
   width: 50vw;  
 }
 
@@ -508,7 +508,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  height: 30vh;
+  height: 23vh;
   width: 50vw;  
 }
 
@@ -539,7 +539,7 @@ h3 {
   display: -ms-flexbox;
   display: flex;  
   grid-column: 1;
-  height: 30vh;
+  height: 23vh;
   width: 50vw;  
 }
 
@@ -569,7 +569,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  height: 30vh;
+  height: 23vh;
   width: 50vw;  
 }
 
@@ -600,7 +600,7 @@ h3 {
   display: -ms-flexbox;
   display: flex;  
   grid-column:1/-1;
-  height: 30vh;
+  height: 23vh;
   width: 100vw;  
 }
 
@@ -693,11 +693,11 @@ form {
   color: white;
   position: absolute;
   margin: 0 auto;
-  border-radius: 30px;
-  right: 4px;
-  top: 2px;
+  border-radius: 2rem;
+  right: 0rem;
+  top: 0rem;
   width: 125px;
-  height: 35px;
+  height: 2.4rem;
   font-size: 1.2rem;
 }
 
@@ -867,37 +867,37 @@ a:hover {
 
   .men-cat {
     grid-area: 1 / 1 / 2 / 3;
-    height: 30vh;
+    height: 23vh;
     width: 100%;  
   }
 
   .trends-cat {
     grid-area: 1 / 3 / 2 / 4; 
-    height: 30vh;
+    height: 23vh;
     width: 100%;  
   }
 
   .glasses-cat {
     grid-area: 1 / 4 / 4 / 5;
-    height: 30vh;
+    height: 23vh;
     width: 100%;  
   }
 
   .sale-cat {
     grid-area: 2 / 1 / 2 / 2;  
-    height: 30vh;
+    height: 23vh;
     width: 100%;  
   }
 
   .bags-cat {
     grid-area: 2 / 2 / 2/ 3;
-    height: 30vh;
+    height: 23vh;
     width: 100%;  
   }
 
   .woman-cat {
     grid-area: 2 / 3 / 4 / 5;  
-    height: 30vh;
+    height: 23vh;
     width: 100%;  
   }
 
@@ -910,7 +910,7 @@ a:hover {
   }
 
   .container {
-    width: 25em;
+    width: 28em;
   }
 
   .site-footer {
